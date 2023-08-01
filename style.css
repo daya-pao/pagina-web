@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,63 +6,80 @@
     list-style: none;
     /* font-size: 18px;  */
 }
-.encabezado{
+
+.encabezado {
     width: 100%;
-   /*  border: 1px solid black; */
+    /*  border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     position: relative;
     padding: 10px;
 }
-.navegacion{
+
+.navegacion {
     position: absolute;
     top: 0;
     right: 0;
-    width: 66%;
-    height: 99vh;
-    background-color:rgb(236, 221, 221);
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(236, 221, 221);
     padding: 16px;
+    display: none;
 }
-.navegacion__item{
+main section{
+    border: 1px solid red;
+}
+
+.navegacion__item {
     padding: 9px;
 }
-.menu__clone{
+
+.menu__clone {
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction: row-reverse;
 }
-.nevegacion__btn{
+
+.nevegacion__btn {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
 }
-.boton--normal{
+
+.boton--normal {
     width: 70px;
     height: 30px;
     background: none;
     border: 0;
 }
-.boton--borde{
+
+.boton--borde {
     width: 67%;
     height: 3em;
     border-radius: 8px;
     background: none;
 }
-.navegecion__Features{
+
+.navegecion__Features {
     display: flex;
     align-items: center;
 }
-.icon--arrow,.arrow--icon{
+
+.icon--arrow,
+.arrow--icon {
     padding-left: 10px;
 }
-.submenu__li{
+
+.submenu__li {
     padding-top: 10px;
     padding-left: 10px;
 }
-.hero{
+
+.hero {
     width: 100%;
 }
-.informacion{
+
+.informacion {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,26 +87,67 @@
     padding: 10px;
     gap: 10px;
 }
-.informacion__make{
-    font-size:2em;
+
+.informacion__make {
+    font-size: 2em;
 }
-.boton__learn{
+
+.boton__learn {
     width: 50%;
     height: 40px;
     border-radius: 10px;
     background-color: white;
 }
-.boton__learn:hover{
-   background-color: black;
-   color: white;
-   font-family: 18px;
+
+.boton__learn:hover {
+    background-color: black;
+    color: white;
+    font-family: 18px;
 }
-.imagen__icon{
+
+.imagen__icon {
     display: flex;
     gap: 20px;
     padding-top: 20px;
     align-items: center;
 }
-.icon{
+
+.icon {
     width: 4em;
+}
+
+main{
+    border: 1px solid blue;
+}
+
+.fondo__negro {
+    background: rgba(0, 0, 0, 0.70);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .navegacion {
+        display: none;
+    }
+
+    .fondo__negro {
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    
+
+    
+
 }
