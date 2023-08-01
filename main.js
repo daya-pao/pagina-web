@@ -2,6 +2,9 @@ const arrowicon = document.querySelector('.icon--arrow');
 const submenu = document.getElementById('submenu');
 const iconarrow = document.querySelector('.arrow--icon');
 const company = document.getElementById('menu__company');
+const navegacion = document.querySelector('.navegacion')
+
+
 function mostrarsudmenu(){
     if(submenu.style.display === 'none'){
         submenu.style.display = 'block';
@@ -19,4 +22,10 @@ function mostarcompany(){
         company.style.display = 'none';
         iconarrow.src = 'images/icon-arrow-down.svg';
     }
+}
+function mostrarMenu(){
+    navegacion.style.display = 'block';
+}
+function ocultarMenu(){
+    navegacion.style.display = 'none';
 }
