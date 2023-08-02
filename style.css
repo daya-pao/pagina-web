@@ -26,9 +26,9 @@
     padding: 16px;
     display: none;
 }
-main section{
+/* main section{
     border: 1px solid red;
-}
+}  */
 
 .navegacion__item {
     padding: 9px;
@@ -89,7 +89,7 @@ main section{
 }
 
 .informacion__make {
-    font-size: 2em;
+    font-size: 30px;
 }
 
 .boton__learn {
@@ -115,10 +115,9 @@ main section{
 .icon {
     width: 4em;
 }
-
-main{
+/* main{
     border: 1px solid blue;
-}
+} */
 
 .fondo__negro {
     background: rgba(0, 0, 0, 0.70);
@@ -139,15 +138,34 @@ main{
     .menu{
         display: none;
     }
-
     main{
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
     }
+    .informacion{
+        display:flex;
+        padding-top: 4em;
+        align-items: flex-start;
+        width: 75%;
+        margin: auto;
+        gap: 30px;
+    }
+    .informacion__make{
+        font-size: 85px;
+    } 
+    .boton__learn{
+        width: 25%;
+        height: 40px;
+    }
+   .imagen__icon{
+        display: flex;
+        justify-content: center;
+        gap: 76px;
+    }
+   .hero {
+        content: url(images/image-hero-desktop.png);
+        width: 350px; 
+    }
 
-    
-
-    
-
-}
+}  
