@@ -2,7 +2,7 @@ const arrowicon = document.querySelector('.icon--arrow');
 const submenu = document.getElementById('submenu');
 const iconarrow = document.querySelector('.arrow--icon');
 const company = document.getElementById('menu__company');
-const navegacion = document.querySelector('.navegacion')
+const navegacion = document.querySelector('.navegacion');
 
 
 function mostrarsudmenu(){
@@ -24,7 +24,7 @@ function mostarcompany(){
     }
 }
 function mostrarMenu(){
-    navegacion.classList.add('display__block');
+    navegacion.style.display = "block";
 }
 function ocultarMenu(){
     navegacion.classList.toggle('display__none');

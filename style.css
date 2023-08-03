@@ -6,7 +6,9 @@
     list-style: none;
     /* font-size: 18px;  */
 }
-
+body{
+    background-color:hsl(0, 0%, 98%);
+}
 .encabezado {
     width: 100%;
     /*  border: 1px solid black; */
@@ -27,63 +29,54 @@
     right: 0;
     width: 300px;
     height: 100vh;
-    background-color: rgb(236, 221, 221);
+    background-color: rgb(255, 254, 254);
     padding: 16px;
 }
-main section{
+/* main section{
     border: 1px solid red;
 }
-
+ */
 .navegacion__item {
     padding: 9px;
 }
-
 .menu__clone {
     display: flex;
     flex-direction: row-reverse;
 
 }
-
 .nevegacion__btn {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
 }
-
 .boton--normal {
     width: 70px;
     height: 30px;
     background: none;
     border: 0;
 }
-
 .boton--borde {
     width: 67%;
     height: 3em;
     border-radius: 8px;
     background: none;
 }
-
 .navegecion__Features {
     display: flex;
     align-items: center;
 }
-
 .icon--arrow,
 .arrow--icon {
     padding-left: 10px;
 }
-
 .submenu__li {
     padding-top: 10px;
     padding-left: 10px;
 }
-
 .hero {
     width: 100%;
 }
-
 .informacion {
     display: flex;
     flex-direction: column;
@@ -92,14 +85,12 @@ main section{
     padding: 10px;
     gap: 10px;
 }
-
 .informacion__make {
     font-size: 30px;
 }
 .informacion__make br{
     display: none;
 }
-
 .boton__learn {
     width: 50%;
     height: 40px;
@@ -112,29 +103,26 @@ main section{
     color: white;
     font-family: 18px;
 }
-
 .imagen__icon {
     display: flex;
-    gap: 20px;
+    gap: 10%;
     padding-top: 20px;
     align-items: center;
 }
 .icon {
     width: 4em;
 }
-main{
+/* main{
     border: 1px solid blue;
-}
-
+} */
 .fondo__negro {
     background: rgba(0, 0, 0, 0.70);
     width: 100vw;
     height: 100vh;
     position: fixed;
-    display: none;
+    display:none;
 }
-
-@media screen and (min-width: 1024px) {
+@media(min-width: 1024px) {
     .encabezado{
         display: flex;
         flex-direction: row;
@@ -148,9 +136,12 @@ main{
         width: auto;
         top: 23px;
         height: 0;
-        left: 10%;
-
+        background-color:hsl(0, 0%, 98%) ;
+        left: 12%;
     }
+   .item__li{
+    color: black;
+   }
     .link{
         display: flex;
         gap: 20px;
@@ -160,7 +151,6 @@ main{
        flex-direction:row;
        left: 50%;
     }
-    
     .fondo__negro {
         display: none;
     }
@@ -173,15 +163,13 @@ main{
         justify-content: center;
     }
     .informacion{
-        display:flex;
-        padding-top: 4em;
         align-items: flex-start;
-        width: 75%;
         margin: auto;
         gap: 30px;
+        padding-top: 20%;
     }
     .informacion__make{
-        font-size: 85px;
+        font-size: 65px;
     } 
     .boton__learn{
         width: 25%;
@@ -189,8 +177,10 @@ main{
     }
    .imagen__icon{
         display: flex;
-        justify-content: center;
-        gap: 76px;
+        gap: 9%;
+    }
+    .icon{
+        width: 4em;
     }
    .hero {
         content: url(images/image-hero-desktop.png);
@@ -205,4 +195,28 @@ main{
     .informacion__make br{
         display: block;
     }
+    .encabezado__informacion{
+        width: 45%;
+    }
+    .encabezado__icon{
+        width: 34%;
+    }
+    .boton--borde{
+        width: 125%;
+    }
+   #submenu{
+        background:white;
+        width: 13%;
+        left: -2%;
+        border: 1px solid black;
+        border-radius: 9px;
+    }
+    #menu__company{
+        background:white;
+        border: 1px solid black;
+        width: 11%;
+        padding: 1%;
+        border-radius: 9px;
+    } 
+    
 }  
