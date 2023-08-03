@@ -24,8 +24,8 @@ function mostarcompany(){
     }
 }
 function mostrarMenu(){
-    navegacion.style.display = 'block';
+    navegacion.classList.add('display__block');
 }
 function ocultarMenu(){
-    navegacion.style.display = 'none';
+    navegacion.classList.toggle('display__none');
 }

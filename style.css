@@ -15,7 +15,12 @@
     position: relative;
     padding: 10px;
 }
-
+.display__block{
+    display: block;
+}
+.display__none{
+    display: none;
+}
 .navegacion {
     position: absolute;
     top: 0;
@@ -24,11 +29,10 @@
     height: 100vh;
     background-color: rgb(236, 221, 221);
     padding: 16px;
-    display: none;
 }
-/* main section{
+main section{
     border: 1px solid red;
-}  */
+}
 
 .navegacion__item {
     padding: 9px;
@@ -37,6 +41,7 @@
 .menu__clone {
     display: flex;
     flex-direction: row-reverse;
+
 }
 
 .nevegacion__btn {
@@ -91,6 +96,9 @@
 .informacion__make {
     font-size: 30px;
 }
+.informacion__make br{
+    display: none;
+}
 
 .boton__learn {
     width: 50%;
@@ -111,13 +119,12 @@
     padding-top: 20px;
     align-items: center;
 }
-
 .icon {
     width: 4em;
 }
-/* main{
+main{
     border: 1px solid blue;
-} */
+}
 
 .fondo__negro {
     background: rgba(0, 0, 0, 0.70);
@@ -128,10 +135,32 @@
 }
 
 @media screen and (min-width: 1024px) {
-    .navegacion {
-        display: none;
+    .encabezado{
+        display: flex;
+        flex-direction: row;
+        padding: 25px;
     }
+    .navegacion{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        width: auto;
+        top: 23px;
+        height: 0;
+        left: 10%;
 
+    }
+    .link{
+        display: flex;
+        gap: 20px;
+    }
+    .nevegacion__btn{
+       display: flex;
+       flex-direction:row;
+       left: 50%;
+    }
+    
     .fondo__negro {
         display: none;
     }
@@ -167,5 +196,13 @@
         content: url(images/image-hero-desktop.png);
         width: 350px; 
     }
-
+    .menu__clone{
+        display: none;
+    }
+    .submenu{
+        position: absolute;
+    }
+    .informacion__make br{
+        display: block;
+    }
 }  
