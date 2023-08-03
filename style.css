@@ -32,6 +32,7 @@ body{
     background-color: rgb(255, 254, 254);
     padding: 16px;
 }
+
 /* main section{
     border: 1px solid red;
 }
@@ -111,6 +112,9 @@ body{
 }
 .icon {
     width: 4em;
+}
+.item__li{
+    color: black;
 }
 /* main{
     border: 1px solid blue;

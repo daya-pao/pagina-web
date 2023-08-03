@@ -6,14 +6,17 @@ const navegacion = document.querySelector('.navegacion');
 
 
 function mostrarsudmenu(){
-    if(submenu.style.display === 'none'){
-        submenu.style.display = 'block';
-        arrowicon.src='images/icon-arrow-up.svg';
-    }else{
-        submenu.style.display = 'none';
-        arrowicon.src = 'images/icon-arrow-down.svg';
-    }
-} 
+    const verificar = submenu.classList.contains('display__none');
+    console.log(verificar);
+   if(verificar){
+    submenu.classList.remove('display__none');
+    arrowicon.src='images/icon-arrow-up.svg';
+   }else{
+    submenu.classList.add('display__none');
+    arrowicon.src = 'images/icon-arrow-down.svg';
+   }
+}
+
 function mostarcompany(){
     if (company.style.display ===  'none'){
         company.style.display = 'block';
@@ -23,9 +26,7 @@ function mostarcompany(){
         iconarrow.src = 'images/icon-arrow-down.svg';
     }
 }
-function mostrarMenu(){
-    navegacion.style.display = "block";
-}
+
 function ocultarMenu(){
     navegacion.classList.toggle('display__none');
 }
