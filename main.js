@@ -1,10 +1,10 @@
 const navegacion = document.querySelector('.navegacion');
-const verificar = submenu.classList.contains('display__none');
+const fondo = document.querySelector('.fondo__negro');
 
 function mostrarsudmenu(submenuId,arrowiconclass){
     const submenu= document.getElementById(submenuId);
-    const arrowicon = document.querySelector(arrowiconclass); 
-    console.log(verificar);
+    const arrowicon = document.querySelector("."+arrowiconclass); 
+    const verificar = submenu.classList.contains('display__none');
    if(verificar){
     submenu.classList.remove('display__none');
     arrowicon.src='images/icon-arrow-up.svg';
@@ -15,4 +15,6 @@ function mostrarsudmenu(submenuId,arrowiconclass){
 }
 function ocultarMostarMenu(){
     navegacion.classList.toggle('display__none');
+    fondo.classList.toggle('display__none');
+    
 }

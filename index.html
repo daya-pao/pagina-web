@@ -13,8 +13,9 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-  <div class="fondo__negro">
+  <div class="fondo__negro  display__none">
   </div>
+  
 
   <header class="encabezado">
     <img src="images/logo.svg" alt="logo" class="logo">
@@ -25,7 +26,7 @@
         </div>
 
         <div class="navegecion__Features">
-          <li class="navegacion__item"><a href="#" class="item__li">Features</a><img src="images/icon-arrow-down.svg"
+          <li class="navegacion__item"><a href="#" class="item__li" onclick="mostrarsudmenu('submenu','icon--arrow')">Features</a><img src="images/icon-arrow-down.svg"
             class="icon--arrow" onclick="mostrarsudmenu('submenu','icon--arrow')">
             <ul class="submenu display__none" id="submenu">
               <li class="submenu__li"><a href="" class="item__li" ><img src="images/icon-todo.svg"> Todo list</a></li>
@@ -37,7 +38,7 @@
         </div>
 
         <div class="navegacion__company">
-          <li class="navegacion__item"><a href="#" class="item__li">Company</a><img src="images/icon-arrow-down.svg" 
+          <li class="navegacion__item"><a href="#" class="item__li" onclick="mostrarsudmenu('menu__company','arrow--icon')" >Company</a><img src="images/icon-arrow-down.svg" 
             class="arrow--icon" onclick="mostrarsudmenu('menu__company','arrow--icon')">
             <ul class="submenu  display__none" id="menu__company">
               <li class="submenu__li"><a href="" class="item__li">History</a></li>
