@@ -4,14 +4,12 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    /* font-size: 18px;  */
 }
 body{
     background-color:hsl(0, 0%, 98%);
 }
 .encabezado {
     width: 100%;
-    /*  border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -32,11 +30,6 @@ body{
     background-color: rgb(255, 254, 254);
     padding: 16px;
 }
-
-/* main section{
-    border: 1px solid red;
-}
- */
 .navegacion__item {
     padding: 9px;
 }
@@ -74,6 +67,7 @@ body{
 .submenu__li {
     padding-top: 10px;
     padding-left: 10px;
+    color: black;
 }
 .hero {
     width: 100%;
@@ -93,7 +87,7 @@ body{
     display: none;
 }
 .boton__learn {
-    width: 50%;
+    width: 30%;
     height: 40px;
     border-radius: 10px;
     background-color: white;
@@ -107,7 +101,8 @@ body{
 .imagen__icon {
     display: flex;
     gap: 10%;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-left: 40px;
     align-items: center;
 }
 .icon {
@@ -116,15 +111,16 @@ body{
 .item__li{
     color: black;
 }
-/* main{
-    border: 1px solid blue;
-} */
+
 .fondo__negro {
     background: rgba(0, 0, 0, 0.70);
     width: 100vw;
     height: 100vh;
     position: fixed;
     display:none;
+}
+.informacion__texto{
+    color:gray;
 }
 @media(min-width: 1024px) {
     .encabezado{
@@ -176,12 +172,12 @@ body{
         font-size: 65px;
     } 
     .boton__learn{
-        width: 25%;
+        width: 20%;
         height: 40px;
     }
    .imagen__icon{
         display: flex;
-        gap: 9%;
+        gap: 20%;
     }
     .icon{
         width: 4em;
@@ -222,5 +218,26 @@ body{
         padding: 1%;
         border-radius: 9px;
     } 
-    
-}  
+}
+@media(min-width: 1360px){
+    #submenu{
+        background:white;
+        width: 10%;
+        left: -2%;
+        border: 1px solid black;
+        border-radius: 9px;
+        padding: 1%;
+    }
+    #menu__company{
+        background:white;
+        border: 1px solid black;
+        width: 10%;
+        height: 130px;
+        padding: 1%;
+        border-radius: 9px;
+    } 
+    .imagen__icon{
+        display: flex;
+        gap: 10%;
+    }
+}

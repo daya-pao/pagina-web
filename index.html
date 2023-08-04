@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
   
@@ -18,32 +20,31 @@
     <img src="images/logo.svg" alt="logo" class="logo">
     <nav class="navegacion display__none">
       <ul class="link">
-        <div class="menu__clone" onclick="ocultarMenu()">
+        <div class="menu__clone" onclick="ocultarMostarMenu()">
           <img src="images/icon-close-menu.svg">
         </div>
 
         <div class="navegecion__Features">
           <li class="navegacion__item"><a href="#" class="item__li">Features</a><img src="images/icon-arrow-down.svg"
-            class="icon--arrow" onclick="mostrarsudmenu()">
+            class="icon--arrow" onclick="mostrarsudmenu('submenu','icon--arrow')">
             <ul class="submenu display__none" id="submenu">
-              <li class="submenu__li"><a href=""><img src="images/icon-todo.svg"> Todo list</a></li>
-              <li class="submenu__li"><a href=""><img src="images/icon-calendar.svg"> calendar</a></li>
-              <li class="submenu__li"><a href=""><img src="images/icon-reminders.svg"> reminders</a></li>
-              <li class="submenu__li"><a href=""><img src="images/icon-planning.svg"> planning</a></li>
+              <li class="submenu__li"><a href="" class="item__li" ><img src="images/icon-todo.svg"> Todo list</a></li>
+              <li class="submenu__li"><a href="" class="item__li"><img src="images/icon-calendar.svg"> calendar</a></li>
+              <li class="submenu__li"><a href="" class="item__li"><img src="images/icon-reminders.svg"> reminders</a></li>
+              <li class="submenu__li"><a href="" class="item__li"><img src="images/icon-planning.svg"> planning</a></li>
             </ul>
           </li>
         </div>
 
         <div class="navegacion__company">
           <li class="navegacion__item"><a href="#" class="item__li">Company</a><img src="images/icon-arrow-down.svg" 
-            class="arrow--icon" onclick="mostarcompany()">
-            <ul class="submenu" id="menu__company">
-              <li class="submenu__li"><a href="">History</a></li>
-              <li class="submenu__li"><a href="">Our Team</a></li>
-              <li class="submenu__li"><a href="">Blog</a></li>
+            class="arrow--icon" onclick="mostrarsudmenu('menu__company','arrow--icon')">
+            <ul class="submenu  display__none" id="menu__company">
+              <li class="submenu__li"><a href="" class="item__li">History</a></li>
+              <li class="submenu__li"><a href="" class="item__li">Our Team</a></li>
+              <li class="submenu__li"><a href="" class="item__li">Blog</a></li>
             </ul>
           </li>
-
         </div>
         <li class="navegacion__item"><a href="#" class="item__li">Careers</a></li>
         <li class="navegacion__item"><a href="#" class="item__li">About</a></li>
@@ -54,7 +55,7 @@
       </div>
      
     </nav>
-    <div class="menu" onclick="ocultarMenu()">
+    <div class="menu" onclick="ocultarMostarMenu()">
       <img src="images/icon-menu.svg" alt="">
     </div>
   </header>
